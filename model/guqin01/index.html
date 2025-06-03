@@ -12,15 +12,16 @@
     <script type="importmap">
         {
             "imports": {
-                "three": "https://QinSociety.github.io/model-repo-01/libs/three/three.module.js",
-                "three/examples/jsm/": "https://QinSociety.github.io/model-repo-01/libs/three/"
+			"three": "https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.module.js",
+			"three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/"
             }
         }
     </script>
     <script type="module">
         import * as THREE from 'three';
-        import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-        import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+        import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/loaders/GLTFLoader.js';
+        import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/controls/OrbitControls.js';
+        import { VertexNormalsHelper } from 'https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/helpers/VertexNormalsHelper.js';
 
         // Set up the scene, camera, and renderer
         const scene = new THREE.Scene();
@@ -40,7 +41,7 @@
         // Load the 3D model
         const loader = new GLTFLoader();
         loader.load(
-            'https://QinSociety.github.io/model-repo-01/model/guqin01/Guqin1_.glb',
+            'https://QinSociety.github.io/model-repo-01/model/guqin01/Guqin01.glb',
             (gltf) => {
                 const model = gltf.scene;
                 model.scale.set(0.01, 0.01, 0.01);
