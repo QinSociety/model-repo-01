@@ -11,8 +11,8 @@
     <script type="importmap">
         {
             "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.module.js",
-                "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.134.0/examples/jsm/"
+                "three": "https://QinSociety.github.io/model-repo-01/libs/three/three.module.js",
+                "three/examples/jsm/": "https://QinSociety.github.io/model-repo-01/libs/three/"
             }
         }
     </script>
@@ -39,7 +39,7 @@
         // Load the 3D model
         const loader = new GLTFLoader();
         loader.load(
-            'https://QinSociety.github.io/model-repo-01/model/guqin01/Guqin1_.glb', // Use GitHub Pages URL
+            'https://QinSociety.github.io/model-repo-01/model/guqin01/Guqin1_.glb',
             (gltf) => {
                 const model = gltf.scene;
                 model.scale.set(0.01, 0.01, 0.01);
@@ -56,7 +56,7 @@
         );
 
         // Position the camera
-        camera.position.set(10, 0, 0);
+        camera.position.set(-10, 0, 0);
         camera.lookAt(0, 0, 0);
 
         // Add orbit controls
