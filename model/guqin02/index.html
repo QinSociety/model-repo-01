@@ -33,10 +33,10 @@
         // Add lighting
         const ambientLight = new THREE.AmbientLight(0xffffff, 3); // Brighter ambient light
         scene.add(ambientLight);
-        const directionalLight1 = new THREE.DirectionalLight(0xffdf8e, 10); // Stronger directional light
+        const directionalLight1 = new THREE.DirectionalLight(0xffdf8e, 6); // Stronger directional light
         directionalLight1.position.set(5, 5, 5).normalize();
         scene.add(directionalLight1);
-        const directionalLight2 = new THREE.DirectionalLight(0xffdf8e, 4); // Stronger directional light
+        const directionalLight2 = new THREE.DirectionalLight(0xffdf8e, 3); // Stronger directional light
         directionalLight2.position.set(5, -5, 5).normalize();
         scene.add(directionalLight2);
         // Load the 3D model
